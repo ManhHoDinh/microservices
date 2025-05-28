@@ -21,7 +21,7 @@ spec:
             - containerPort: 5432
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
-              name: postgres-data
+              name: postgressql-data
           env:
             - name: POSTGRES_DB
               value: postgres
@@ -31,11 +31,10 @@ spec:
               value: postgres
   volumeClaimTemplates:
     - metadata:
-        name: postgres-data
+        name: postgressql-data
       spec:
         accessModes:
           - ReadWriteOnce
-        storageClassName: hostpath
         resources:
           requests:
             storage: 5Gi
