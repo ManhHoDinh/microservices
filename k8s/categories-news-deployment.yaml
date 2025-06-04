@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: categories-service
-          image: dinhmanh11/microservice
+          image: registry.gitlab.com/manhhodinh/microservices
           env:
             - name: SERVICES
               value: categories
@@ -43,7 +43,7 @@ spec:
     spec:
       containers:
         - name: news-service
-          image: dinhmanh11/microservice
+          image: registry.gitlab.com/manhhodinh/microservices
           env:
             - name: SERVICES
               value: news

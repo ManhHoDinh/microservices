@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: dinhmanh11/microservice
+          image: registry.gitlab.com/manhhodinh/microservices
           ports:
             - name: http
               containerPort: 3000
